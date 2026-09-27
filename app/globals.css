@@ -848,6 +848,93 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
+/* ---------- vcard (conference profile) ---------- */
+.vcard-wrap {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+.vcard-logo {
+  margin: 0 auto 24px;
+  display: block;
+  height: auto;
+}
+.vcard {
+  width: 100%;
+  max-width: 360px;
+  background: var(--ink);
+  color: #dbeceb;
+  border-radius: var(--radius);
+  padding: 44px 32px;
+  text-align: center;
+}
+.vcard img.vcard-photo {
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  filter: grayscale(0.15);
+}
+.vcard h1 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 22px;
+}
+.vcard .role {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-top: 6px;
+  display: block;
+}
+.vcard .vcard-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.vcard .vcard-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 100px;
+  padding: 12px 18px;
+  transition: background 0.15s ease;
+}
+.vcard .vcard-links a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.vcard .vcard-links svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--amber);
+}
+.vcard .vcard-links a.linkedin {
+  justify-content: center;
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--ink-deep);
+  font-weight: 600;
+}
+.vcard .vcard-links a.linkedin svg {
+  color: var(--ink-deep);
+}
+.vcard .vcard-links a.linkedin:hover {
+  background: var(--amber-deep);
+}
+
 /* ---------- closing cta ---------- */
 .cta {
   background: var(--ink);

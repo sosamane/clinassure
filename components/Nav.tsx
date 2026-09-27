@@ -23,8 +23,7 @@ export default function Nav() {
     <nav className="site-nav">
       <div className="wrap nav-inner">
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
-          <Image src="/images/logo-icon.png" alt="ClinAssure" width={30} height={17} priority />
-          Clin<em>Assure</em>
+          <Image src="/images/logo-clinassure.png" alt="ClinAssure" width={73} height={17} priority />
         </Link>
 
         <div className={`nav-links${open ? " open" : ""}`}>

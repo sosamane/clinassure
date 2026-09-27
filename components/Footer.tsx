@@ -6,8 +6,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="wrap foot-inner">
         <div className="foot-brand">
-          <Image src="/images/logo-icon.png" alt="ClinAssure" width={24} height={13} />
-          ClinAssure
+          <Image src="/images/logo-clinassure.png" alt="ClinAssure" width={55} height={13} />
         </div>
         <div className="foot-links">
           <Link href="/about">About</Link>
